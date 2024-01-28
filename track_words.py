@@ -6,15 +6,11 @@ client = ScrapingBeeClient(api_key=SCRAPINGBEE_API_KEY)
 
 def scrape_url(url, search_terms):
     try:
-        # Make a request to ScrapingBee to get the HTML content
         response = client.get(url)
 
-        # Check if the request to ScrapingBee was successful
         if response.status_code == 200:
-            # Decode the response content to convert it to a string
             content_str = response.content.decode('utf-8')
 
-            # Filter and check for specific words in the response content
             matches = {term: term in content_str for term in search_terms}
 
             return {'status': 'success', 'matches': matches}
