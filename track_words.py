@@ -1,6 +1,5 @@
 from scrapingbee import ScrapingBeeClient
 
-# Replace 'your_api_key' with your actual ScrapingBee API key
 SCRAPINGBEE_API_KEY = 'UO8H6A67OVIPPBNGT233G2LIV20OA3MK5F1WXNHAQVBRVB98733LP55HILQZJIU0J8OF5GE7CYTJQA1B'
 client = ScrapingBeeClient(api_key=SCRAPINGBEE_API_KEY)
 

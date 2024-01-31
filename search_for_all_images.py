@@ -4,7 +4,6 @@ import requests
 from io import BytesIO
 from PIL import Image
 
-# Replace 'your_api_key' with your actual ScrapingBee API key
 client = ScrapingBeeClient(api_key='UO8H6A67OVIPPBNGT233G2LIV20OA3MK5F1WXNHAQVBRVB98733LP55HILQZJIU0J8OF5GE7CYTJQA1B')
 
 url_input = input("Enter the URLs you want to scrape (comma-separated): ")

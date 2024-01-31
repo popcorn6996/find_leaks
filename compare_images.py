@@ -6,7 +6,6 @@ import requests
 import imagehash
 import sys
 
-# Replace 'your_api_key' with your actual ScrapingBee API key
 client = ScrapingBeeClient(api_key='UO8H6A67OVIPPBNGT233G2LIV20OA3MK5F1WXNHAQVBRVB98733LP55HILQZJIU0J8OF5GE7CYTJQA1B')
 
 url = input("Enter the URL you want to scrape: ")
